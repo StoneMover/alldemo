@@ -1,0 +1,57 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - BTCore (0.4.2):
+    - AFNetworking
+    - BTHelp
+    - BTLoading
+    - BTWidgetView
+    - MJRefresh
+    - RTRootNavigationController
+  - BTHelp (0.3.12)
+  - BTLoading (0.3.3)
+  - BTWidgetView (0.3.7):
+    - BTHelp
+  - MJRefresh (3.5.0)
+  - RTRootNavigationController (0.7.2):
+    - RTRootNavigationController/Core (= 0.7.2)
+  - RTRootNavigationController/Core (0.7.2)
+
+DEPENDENCIES:
+  - BTCore
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - BTCore
+    - BTHelp
+    - BTLoading
+    - BTWidgetView
+    - MJRefresh
+    - RTRootNavigationController
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  BTCore: 2d53eac700b7cb739591dd76e03f76dc5fb1313b
+  BTHelp: d7a9a178b60db8e6c77d32a0dd5fdb38e752d967
+  BTLoading: 80fd462b12e693e54c594d2e61ad6c84e9201265
+  BTWidgetView: 9fef4e24241edfbde907fa535fcf9a77986bbd97
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  RTRootNavigationController: 8344c2352d6d40fa370d0366efae2c84a945213f
+
+PODFILE CHECKSUM: 9c7ccb15b2318ed9853f825d650716a08a7f85d4
+
+COCOAPODS: 1.8.4

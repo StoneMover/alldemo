@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="208" id="KGk-i7-Jjw" customClass="FriendTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="208"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="207.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UGa-hr-ZGr">
+                        <rect key="frame" x="15" y="15" width="42" height="42"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="7gB-hV-8L0"/>
+                            <constraint firstAttribute="height" constant="42" id="UbQ-6O-qyz"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="郭尖尖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRE-UI-R30">
+                        <rect key="frame" x="65" y="16" width="239" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="带小可爱出来晒太阳了" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0i-0j-scJ">
+                        <rect key="frame" x="65" y="38" width="239" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="H0E-zE-GOn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xvZ-bT-Bne" customClass="FriendImgContainerView">
+                        <rect key="frame" x="67" y="67" width="237" height="84"/>
+                        <color key="backgroundColor" red="0.85480856900000002" green="0.85495573280000003" blue="0.85479927060000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="237" id="IxO-9G-3b7"/>
+                            <constraint firstAttribute="height" constant="84" id="Waj-J4-Yk7"/>
+                        </constraints>
+                    </view>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fIS-RU-VO5" customClass="FriendCommentView">
+                        <rect key="frame" x="67" y="169" width="237" height="30"/>
+                        <color key="backgroundColor" red="0.85480856900000002" green="0.85495573280000003" blue="0.85479927060000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="03r-fs-yF2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fIS-RU-VO5" firstAttribute="leading" secondItem="UGa-hr-ZGr" secondAttribute="trailing" constant="10" id="6SD-x8-9wl"/>
+                    <constraint firstItem="fIS-RU-VO5" firstAttribute="top" secondItem="xvZ-bT-Bne" secondAttribute="bottom" constant="18" id="6Zf-As-vI7"/>
+                    <constraint firstItem="XRE-UI-R30" firstAttribute="leading" secondItem="UGa-hr-ZGr" secondAttribute="trailing" constant="8" id="CY5-8V-jmA"/>
+                    <constraint firstItem="xvZ-bT-Bne" firstAttribute="leading" secondItem="UGa-hr-ZGr" secondAttribute="trailing" constant="10" id="Dpf-Yx-bpq"/>
+                    <constraint firstItem="UGa-hr-ZGr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="EAM-Fe-t8S"/>
+                    <constraint firstItem="xvZ-bT-Bne" firstAttribute="top" secondItem="Q0i-0j-scJ" secondAttribute="bottom" constant="11" id="Gsb-El-zNb"/>
+                    <constraint firstAttribute="trailing" secondItem="Q0i-0j-scJ" secondAttribute="trailing" constant="16" id="GyR-AL-cJy"/>
+                    <constraint firstAttribute="trailing" secondItem="XRE-UI-R30" secondAttribute="trailing" constant="16" id="OIX-2j-gPT"/>
+                    <constraint firstItem="UGa-hr-ZGr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="XPH-xA-gQx"/>
+                    <constraint firstItem="Q0i-0j-scJ" firstAttribute="top" secondItem="XRE-UI-R30" secondAttribute="bottom" constant="4" id="ijY-Xj-e6w"/>
+                    <constraint firstAttribute="trailing" secondItem="fIS-RU-VO5" secondAttribute="trailing" constant="16" id="nyG-lq-t03"/>
+                    <constraint firstItem="Q0i-0j-scJ" firstAttribute="leading" secondItem="UGa-hr-ZGr" secondAttribute="trailing" constant="8" id="pcO-nv-ehk"/>
+                    <constraint firstItem="XRE-UI-R30" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="qsY-Mf-O2E"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="collectionViewH" destination="Waj-J4-Yk7" id="t7n-jh-F1w"/>
+                <outlet property="collectionViewTop" destination="Gsb-El-zNb" id="itV-TZ-QVN"/>
+                <outlet property="collectionViewW" destination="IxO-9G-3b7" id="ubr-8J-Brn"/>
+                <outlet property="commentViewH" destination="03r-fs-yF2" id="QI5-XM-xs6"/>
+                <outlet property="imgViewIcon" destination="UGa-hr-ZGr" id="SqM-Ap-yUb"/>
+                <outlet property="labelContent" destination="Q0i-0j-scJ" id="geV-Xx-CIy"/>
+                <outlet property="labelContentH" destination="H0E-zE-GOn" id="MEC-DG-im9"/>
+                <outlet property="labelNick" destination="XRE-UI-R30" id="lfA-6e-QMA"/>
+                <outlet property="viewComment" destination="fIS-RU-VO5" id="MRX-yk-CXP"/>
+                <outlet property="viewImg" destination="xvZ-bT-Bne" id="JcU-Yg-7YX"/>
+            </connections>
+            <point key="canvasLocation" x="-490" y="185"/>
+        </tableViewCell>
+    </objects>
+</document>

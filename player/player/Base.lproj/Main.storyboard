@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RaS-ev-WYe">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ua-BM-7a7" customClass="BTAvPlayer">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="195" id="HJi-HA-a1s"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RaS-ev-WYe" firstAttribute="top" secondItem="0ua-BM-7a7" secondAttribute="bottom" id="EVh-5o-vus"/>
+                            <constraint firstItem="0ua-BM-7a7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="JC0-fi-iNJ"/>
+                            <constraint firstAttribute="trailing" secondItem="0ua-BM-7a7" secondAttribute="trailing" id="Mbx-s7-PqN"/>
+                            <constraint firstAttribute="trailing" secondItem="RaS-ev-WYe" secondAttribute="trailing" id="QSS-dk-LPP"/>
+                            <constraint firstItem="RaS-ev-WYe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Uoz-tn-UES"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RaS-ev-WYe" secondAttribute="bottom" id="gHh-ru-NnA"/>
+                            <constraint firstItem="0ua-BM-7a7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wcz-Vg-O6U"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="player" destination="0ua-BM-7a7" id="lh4-yR-hz6"/>
+                        <outlet property="tableView" destination="RaS-ev-WYe" id="IYa-i0-ide"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="424.13793103448279"/>
+        </scene>
+    </scenes>
+</document>

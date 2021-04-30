@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="HomeImgItem" customModule="pictureMananger" customModuleProvider="target">
+            <connections>
+                <outlet property="contentImgView" destination="zds-rg-Ams" id="ybh-cw-D7Q"/>
+                <outlet property="nameLabel" destination="QhA-ql-F4b" id="fTP-F1-EKh"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="j04-xF-7ia"/>
+                <outlet property="viewBg" destination="bLq-RN-h8W" id="1ZK-oN-mKy"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY" customClass="BTBaseView" customModule="pictureMananger" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="bLq-RN-h8W">
+                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                </customView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zds-rg-Ams">
+                    <rect key="frame" x="20" y="32" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="9JP-82-uk9"/>
+                        <constraint firstAttribute="width" constant="80" id="Dzw-V3-M6V"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSFolder" id="pXy-OC-vi0"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QhA-ql-F4b">
+                    <rect key="frame" x="4" y="12" width="112" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" truncatesLastVisibleLine="YES" alignment="center" title="Label" usesSingleLineMode="YES" id="gdZ-Eo-CJw">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="zds-rg-Ams" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="8" id="2QK-Kh-Rjx"/>
+                <constraint firstAttribute="trailing" secondItem="bLq-RN-h8W" secondAttribute="trailing" id="CI1-Lu-y5s"/>
+                <constraint firstItem="QhA-ql-F4b" firstAttribute="top" secondItem="zds-rg-Ams" secondAttribute="bottom" constant="4" id="JB2-PR-pa9"/>
+                <constraint firstItem="bLq-RN-h8W" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="T7J-9h-1Zh"/>
+                <constraint firstAttribute="trailing" secondItem="QhA-ql-F4b" secondAttribute="trailing" constant="6" id="WGr-gW-1In"/>
+                <constraint firstItem="bLq-RN-h8W" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="kZJ-Jw-SM4"/>
+                <constraint firstAttribute="bottom" secondItem="bLq-RN-h8W" secondAttribute="bottom" id="rvZ-rK-THW"/>
+                <constraint firstItem="QhA-ql-F4b" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="6" id="s6j-ZK-IYk"/>
+                <constraint firstItem="zds-rg-Ams" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="trU-XA-PCc"/>
+                <constraint firstItem="QhA-ql-F4b" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="vEZ-On-knC"/>
+            </constraints>
+            <point key="canvasLocation" x="53" y="-57"/>
+        </customView>
+        <customObject id="ub5-Ff-hnB" customClass="HomeImgItem" customModule="pictureMananger" customModuleProvider="target"/>
+    </objects>
+    <resources>
+        <image name="NSFolder" width="32" height="32"/>
+    </resources>
+</document>

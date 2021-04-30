@@ -1,0 +1,35 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8C9E3C8A3F1FFF685BD71D3FAAD9F30B6BE89DE4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "8C9E3C8A3F1FFF685BD71D3FAAD9F30B6BE89DE4" : {
+
+    },
+    "fc670fde-458c-264a-b70c-48d62353da93++1844" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8C9E3C8A3F1FFF685BD71D3FAAD9F30B6BE89DE4" : 0,
+    "fc670fde-458c-264a-b70c-48d62353da93++1844" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "78261300-6E60-492B-AF44-8C2522E874A5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8C9E3C8A3F1FFF685BD71D3FAAD9F30B6BE89DE4" : "iosFrameworks\/",
+    "fc670fde-458c-264a-b70c-48d62353da93++1844" : "iosFrameworks\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "player",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BT-IOS-017(视频播放组件)\/展示效果(demo)\/player\/player.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.oschina.net\/stonemover\/ios-frameworks.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8C9E3C8A3F1FFF685BD71D3FAAD9F30B6BE89DE4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.3.113\/project",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "fc670fde-458c-264a-b70c-48d62353da93++1844"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="e0V-Eq-gMZ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="zie-72-ekv">
+            <objects>
+                <windowController id="e0V-Eq-gMZ" customClass="GalleryWindowController" customModule="pictureMananger" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="documentWindow" frameAutosaveName="" id="6Az-4y-Kp6">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="294" y="323" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <connections>
+                            <outlet property="delegate" destination="e0V-Eq-gMZ" id="txf-Ji-Sau"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="rBd-Fk-Ipg" kind="relationship" relationship="window.shadowedContentViewController" id="OJF-Ke-f6i"/>
+                    </connections>
+                </windowController>
+                <customObject id="crx-Du-Qx1" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-111" y="72"/>
+        </scene>
+        <!--Gallery View Controller-->
+        <scene sceneID="gSr-ev-ABd">
+            <objects>
+                <viewController id="rBd-Fk-Ipg" customClass="GalleryViewController" customModule="pictureMananger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="pJL-qW-WGG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Bq-mP-mby">
+                                <rect key="frame" x="0.0" y="600" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="8No-gJ-5kj"/>
+                            </imageView>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="gvH-cB-gyK">
+                                <rect key="frame" x="532" y="276" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="9Dy-2V-GYF"/>
+                                    <constraint firstAttribute="height" constant="48" id="J9G-Zq-hxp"/>
+                                </constraints>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSGoForwardTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="dhv-zs-HcI">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="nextClick:" target="rBd-Fk-Ipg" id="PXr-q0-aIw"/>
+                                </connections>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="mRw-nZ-ERu">
+                                <rect key="frame" x="20" y="276" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="C7m-M6-Nxu"/>
+                                    <constraint firstAttribute="width" constant="48" id="we2-Ih-IQ4"/>
+                                </constraints>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSGoBackTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="r7j-cJ-aMq">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="lastClick:" target="rBd-Fk-Ipg" id="0eL-7u-Jli"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="gvH-cB-gyK" firstAttribute="centerY" secondItem="pJL-qW-WGG" secondAttribute="centerY" id="Pmx-p0-Lvu"/>
+                            <constraint firstItem="mRw-nZ-ERu" firstAttribute="centerY" secondItem="pJL-qW-WGG" secondAttribute="centerY" id="YNH-p1-xA1"/>
+                            <constraint firstItem="mRw-nZ-ERu" firstAttribute="leading" secondItem="pJL-qW-WGG" secondAttribute="leading" constant="20" id="ffq-gM-9Dr"/>
+                            <constraint firstAttribute="trailing" secondItem="gvH-cB-gyK" secondAttribute="trailing" constant="20" id="mfL-LU-hUL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentImgView" destination="3Bq-mP-mby" id="aDn-du-2Z4"/>
+                        <outlet property="lastBtn" destination="mRw-nZ-ERu" id="tdp-Yt-47p"/>
+                        <outlet property="nextBtn" destination="gvH-cB-gyK" id="Ffd-ji-Bx3"/>
+                    </connections>
+                </viewController>
+                <customObject id="kih-Q9-4T5" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="851" y="3"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NSGoBackTemplate" width="9" height="12"/>
+        <image name="NSGoForwardTemplate" width="9" height="12"/>
+    </resources>
+</document>
